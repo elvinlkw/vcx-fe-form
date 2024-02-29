@@ -8,7 +8,7 @@ interface IHeaderProps {
 
 const Header: React.FC<IHeaderProps> = ({ isEditing, onToggle }) => {
   return (
-    <StyledHeader>
+    <StyledHeader className="flex justify-between">
       <span>Editable</span>
       <Switch defaultChecked={false} value={isEditing} onChange={onToggle} />
     </StyledHeader>

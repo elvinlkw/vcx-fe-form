@@ -4,6 +4,7 @@ import { StyledHeading, StyledText } from "./styles";
 import FloatedInput from "../floated-input";
 import RadioGroup from "../radio-group";
 import MultiSelectCheckbox from "../multiselect-checkbox";
+import { TOOLS } from "../../constants";
 
 interface IFormProps {
   isEditing: boolean;
@@ -14,8 +15,6 @@ interface IFormValues {
   isProficient: boolean;
   tools: string;
 }
-
-const TOOLS: string[] = ["Redux", "Lodash", "Ant design", "Webpack", "Other"];
 
 const FormComponent: React.FC<IFormProps> = ({ isEditing }) => {
   const [form] = Form.useForm();
