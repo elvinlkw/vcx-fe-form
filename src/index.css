@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #000;
+  --virgo-primary-purple: #6b47ed;
+  --virgo-primary-purple-disabled: #d4ccf7;
+  --primary-white: #fff;
+  --option-disabled-grey: #d8d8d8;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  font-family: "Nunito";
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+[type="submit"] {
+  background-color: var(--virgo-primary-purple);
+}
+
+[type="submit"]:disabled {
+  background-color: var(--virgo-primary-purple-disabled);
+  color: var(--primary-white);
+}
+
+.ant-form-item {
+  margin: 0;
+  padding: 0;
+}
