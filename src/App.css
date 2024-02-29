@@ -2,3 +2,10 @@
   width: 330px;
   border-radius: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .app-container {
+    width: 100vw;
+    min-height: 100vh;
+  }
+}
